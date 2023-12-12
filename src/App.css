@@ -1,0 +1,113 @@
+.App {
+  text-align: center;
+}
+
+.location-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.modal-layout {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.modal {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 16px;
+  height: 100%;
+  width: 100%;
+  max-width: 840px;
+  max-height: calc(100vh - 32px);
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(135,81,170,1) 35%, rgba(0,212,255,1) 100%);
+  color: white;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.close-button {
+  align-self: flex-end;
+  width: 24px;
+  height: 24px;
+  margin: 16px 16px 0px 0px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 16px;
+}
+
+.green-ball {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.yellow-ball {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+.red-ball {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+}
+.transparent-ball {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 0px 8px;
+}
+
+.opcode {
+  min-width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover {
+    background-color: #333;
+  }
+  &:active {
+    background-color: #272525;
+  }
+}
